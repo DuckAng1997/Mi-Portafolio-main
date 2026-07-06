@@ -29,8 +29,10 @@
                 <a href="#home" class="nav-link" data-i18n="navHome">Inicio</a>
                 <a href="#about" class="nav-link" data-i18n="navAbout">Perfil</a>
                 <a href="#experience" class="nav-link" data-i18n="navExperience">Experiencia</a>
+                <a href="#education" class="nav-link" data-i18n="navEducation">Estudios</a>
                 <a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a>
                 <a href="#projects" class="nav-link" data-i18n="navProjects">Proyectos</a>
+                <a href="#certificates" class="nav-link" data-i18n="navCertificates">Certificados</a>
                 <a href="#contact" class="nav-link" data-i18n="navContact">Contacto</a>
                 <div class="nav-actions">
                     <button class="icon-button" id="theme-toggle" aria-label="Cambiar tema">
@@ -180,6 +182,32 @@
             </div>
         </section>
 
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag" data-i18n="educationTag">Formacion</span>
+                    <h2 data-i18n="educationTitle">Estudios</h2>
+                    <p data-i18n="educationText">Base academica orientada a sistemas, analisis, desarrollo de software y adaptacion a entornos tecnologicos reales.</p>
+                </div>
+
+                <div class="education-grid">
+                    <article class="education-card reveal">
+                        <div class="education-year">2022</div>
+                        <h3 data-i18n="education1Title">Ingeniero de Sistemas</h3>
+                        <p data-i18n="education1School">Universidad Tecnica de Machala</p>
+                        <span data-i18n="education1Location">Machala, El Oro</span>
+                    </article>
+
+                    <article class="education-card reveal">
+                        <div class="education-year">2015</div>
+                        <h3 data-i18n="education2Title">Bachiller en Ciencias</h3>
+                        <p data-i18n="education2School">Unidad Educativa Particular Mixta Santisimos Corazones</p>
+                        <span data-i18n="education2Location">Pasaje, El Oro</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="skills">
             <div class="container">
                 <div class="section-heading reveal">
@@ -230,35 +258,75 @@
             </div>
         </section>
 
+        <section class="section" id="certificates" data-github-owner="DuckAng1997" data-github-repo="Mi-Portafolio-main" data-github-branch="main">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag" data-i18n="certificatesTag">Respaldo profesional</span>
+                    <h2 data-i18n="certificatesTitle">Certificados</h2>
+                    <p data-i18n="certificatesText">Documentos en PDF relacionados con formacion complementaria, participaciones y experiencia profesional.</p>
+                </div>
+
+                <div class="certificates-layout">
+                    <div class="certificates-grid" id="certificates-grid">
+                        <div class="certificate-empty" id="certificates-status" data-i18n="certificateLoading">Cargando certificados...</div>
+                    </div>
+
+                    <div class="certificate-viewer reveal">
+                        <div class="certificate-viewer-header">
+                            <div>
+                                <span class="section-tag" data-i18n="certificateViewerTag">Vista previa</span>
+                                <h3 id="certificate-viewer-title" data-i18n="certificateViewerTitle">Selecciona un certificado</h3>
+                            </div>
+                            <a id="certificate-viewer-link" class="button secondary" href="#" target="_blank" rel="noopener" data-i18n="certificateOpen">Abrir PDF</a>
+                        </div>
+                        <iframe id="certificate-frame" class="certificate-frame" src="about:blank" title="Vista previa de certificado"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section alt-section" id="projects">
             <div class="container">
                 <div class="section-heading reveal">
                     <span class="section-tag" data-i18n="projectsTag">Portafolio</span>
                     <h2 data-i18n="projectsTitle">Proyectos y experiencias destacadas</h2>
-                    <p data-i18n="projectsText">Una mezcla de desarrollo web, aplicaciones moviles, servidores y simulacion aplicada.</p>
+                    <p data-i18n="projectsText">Proyectos enfocados en sistemas empresariales, soporte operativo, monitoreo, inventario, aplicaciones web y soluciones desplegadas en entornos reales.</p>
                 </div>
 
                 <div class="projects-grid">
+                    <article class="project-card reveal project-featured">
+                        <div class="project-year">2026</div>
+                        <img src="img/gestor-integral.png" alt="Gestor integral de soporte y operaciones">
+                        <div class="project-body">
+                            <span class="project-type">Enterprise</span>
+                            <h3 data-i18n="project0Title">Gestor integral de soporte y operaciones</h3>
+                            <p data-i18n="project0Text">Sistema interno para gestion de incidencias y tickets, monitoreo de timbres de cobros, control de inventario, registro de soluciones, seguimiento operativo y despliegue de sistemas institucionales.</p>
+                        </div>
+                    </article>
+
                     <article class="project-card reveal">
+                        <div class="project-year">2024</div>
                         <img src="img/Tiendaonlinde.png" alt="Proyecto Tienda Online">
                         <div class="project-body">
                             <span class="project-type">Web</span>
                             <h3 data-i18n="project1Title">Tienda Online</h3>
-                            <p data-i18n="project1Text">Desarrollo de una tienda online con Drupal Commerce y PHP orientada a experiencia de compra y gestion de catalogo.</p>
+                            <p data-i18n="project1Text">Plataforma ecommerce orientada a catalogo, experiencia de compra y administracion comercial con enfoque en usabilidad y gestion de contenidos.</p>
                             <a href="https://dev-tienda-online.pantheonsite.io/" target="_blank" rel="noopener" class="project-link" data-i18n="visitProject">Visitar proyecto</a>
                         </div>
                     </article>
 
                     <article class="project-card reveal">
+                        <div class="project-year">2023</div>
                         <img src="img/centOS.png" alt="Proyecto de servicios en CentOS">
                         <div class="project-body">
                             <span class="project-type">Infraestructura</span>
                             <h3 data-i18n="project2Title">Servicios sobre CentOS</h3>
-                            <p data-i18n="project2Text">Configuracion de servicios web, proxy, base de datos, samba, DHCP, DNS, correo, firewall y ruteo en entorno virtualizado.</p>
+                            <p data-i18n="project2Text">Implementacion y administracion de servicios de red, seguridad, base de datos y conectividad para laboratorio y pruebas de infraestructura.</p>
                         </div>
                     </article>
 
                     <article class="project-card reveal">
+                        <div class="project-year">2023</div>
                         <img src="img/cookfish.png" alt="Aplicacion CookFish">
                         <div class="project-body">
                             <span class="project-type">Mobile</span>
@@ -269,6 +337,7 @@
                     </article>
 
                     <article class="project-card reveal">
+                        <div class="project-year">2023</div>
                         <img src="img/puertofish.png" alt="Aplicacion PuertoFish">
                         <div class="project-body">
                             <span class="project-type">Mobile</span>
@@ -279,6 +348,7 @@
                     </article>
 
                     <article class="project-card reveal">
+                        <div class="project-year">2022</div>
                         <img src="img/fabrica.png" alt="Optimizacion de fabrica">
                         <div class="project-body">
                             <span class="project-type">Simulacion</span>

@@ -433,6 +433,131 @@ body.light-theme .timeline-pill {
   padding-left: 1.15rem;
 }
 
+.education-grid,
+.certificates-grid,
+.certificates-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.education-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.education-card,
+.certificate-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.education-card {
+  padding: 1.5rem;
+}
+
+.education-year {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(76, 201, 240, 0.12);
+  border: 1px solid rgba(76, 201, 240, 0.25);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.education-card h3,
+.certificate-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.education-card p,
+.education-card span,
+.certificate-card p {
+  color: var(--muted);
+}
+
+.certificates-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.certificates-layout {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+}
+
+.certificate-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  gap: 1rem;
+  padding: 1.3rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.certificate-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(76, 201, 240, 0.35);
+}
+
+.certificate-card.is-active {
+  border-color: rgba(76, 201, 240, 0.45);
+  background: linear-gradient(135deg, rgba(76, 201, 240, 0.1), rgba(123, 97, 255, 0.1));
+}
+
+.certificate-empty {
+  grid-column: 1 / -1;
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.certificate-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(76, 201, 240, 0.12);
+  color: var(--accent);
+  font-size: 1.4rem;
+  flex: 0 0 auto;
+}
+
+.certificate-viewer {
+  padding: 1.3rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.certificate-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-viewer-header h3 {
+  margin: 0.75rem 0 0;
+}
+
+.certificate-frame {
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
 .skills-layout {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -484,7 +609,32 @@ body.light-theme .timeline-pill {
 }
 
 .project-card {
+  position: relative;
   overflow: hidden;
+}
+
+.project-featured {
+  border-color: rgba(76, 201, 240, 0.34);
+}
+
+.project-year {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(8, 17, 32, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+body.light-theme .project-year {
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--accent-2);
 }
 
 .project-card img {
@@ -577,8 +727,11 @@ body.light-theme .timeline-pill {
 
   .hero-grid,
   .about-grid,
+  .education-grid,
   .skills-layout,
   .projects-grid,
+  .certificates-layout,
+  .certificates-grid,
   .contact-grid,
   .footer-content {
     grid-template-columns: 1fr;
@@ -596,6 +749,15 @@ body.light-theme .timeline-pill {
 
   .hero-copy h1 {
     font-size: 2.6rem;
+  }
+
+  .certificate-viewer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .certificate-frame {
+    min-height: 480px;
   }
 
   .timeline-item {

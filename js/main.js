@@ -3,8 +3,10 @@ const translations = {
     navHome: "Inicio",
     navAbout: "Perfil",
     navExperience: "Experiencia",
+    navEducation: "Estudios",
     navSkills: "Skills",
     navProjects: "Proyectos",
+    navCertificates: "Certificados",
     navContact: "Contacto",
     eyebrow: "Ingeniero de Sistemas | Full Stack | Soporte e Infraestructura",
     heroGreeting: "Hola, soy",
@@ -44,6 +46,15 @@ const translations = {
     job1Item2: "Soporte tecnico en tiempo real para usuarios de sistemas criticos.",
     job1Item3: "Administracion y respaldo de bases de datos, monitoreo continuo e informes tecnicos.",
     job1Item4: "Participacion en desarrollo, pruebas, mantenimiento y capacitacion de sistemas tecnologicos.",
+    educationTag: "Formacion",
+    educationTitle: "Estudios",
+    educationText: "Base academica orientada a sistemas, analisis, desarrollo de software y adaptacion a entornos tecnologicos reales.",
+    education1Title: "Ingeniero de Sistemas",
+    education1School: "Universidad Tecnica de Machala",
+    education1Location: "Machala, El Oro",
+    education2Title: "Bachiller en Ciencias",
+    education2School: "Unidad Educativa Particular Mixta Santisimos Corazones",
+    education2Location: "Pasaje, El Oro",
     skillsTag: "Capacidades",
     skillsTitle: "Stack tecnico y habilidades clave",
     skillGroup1: "Desarrollo",
@@ -57,17 +68,31 @@ const translations = {
     soft6: "Creatividad",
     projectsTag: "Portafolio",
     projectsTitle: "Proyectos y experiencias destacadas",
-    projectsText: "Una mezcla de desarrollo web, aplicaciones moviles, servidores y simulacion aplicada.",
+    projectsText: "Proyectos enfocados en sistemas empresariales, soporte operativo, monitoreo, inventario, aplicaciones web y soluciones desplegadas en entornos reales.",
+    project0Title: "Gestor integral de soporte y operaciones",
+    project0Text: "Sistema interno para gestion de incidencias y tickets, monitoreo de timbres de cobros, control de inventario, registro de soluciones, seguimiento operativo y despliegue de sistemas institucionales.",
     project1Title: "Tienda Online",
-    project1Text: "Desarrollo de una tienda online con Drupal Commerce y PHP orientada a experiencia de compra y gestion de catalogo.",
+    project1Text: "Plataforma ecommerce orientada a catalogo, experiencia de compra y administracion comercial con enfoque en usabilidad y gestion de contenidos.",
     project2Title: "Servicios sobre CentOS",
-    project2Text: "Configuracion de servicios web, proxy, base de datos, samba, DHCP, DNS, correo, firewall y ruteo en entorno virtualizado.",
+    project2Text: "Implementacion y administracion de servicios de red, seguridad, base de datos y conectividad para laboratorio y pruebas de infraestructura.",
     project3Text: "Aplicacion movil de recetas basada en especies de peces disponibles en Machala, con apoyo visual e instrucciones detalladas.",
     project4Text: "Aplicacion movil para identificar peces, consultar caracteristicas y acceder a informacion nutricional de apoyo.",
     project5Title: "Optimizacion de fabrica",
     project5Text: "Simulacion del proceso productivo de una fabrica de mermelada en FlexSim para detectar oportunidades de mejora operativa.",
+    project6Title: "Plataforma de monitoreo y soporte tecnico",
+    project6Text: "Modulo para seguimiento de solicitudes, incidentes, accesos rapidos a monitores operativos, bitacora de atenciones y control de estados para soporte interno.",
     visitProject: "Visitar proyecto",
     viewStore: "Ver en tienda",
+    certificatesTag: "Respaldo profesional",
+    certificatesTitle: "Certificados",
+    certificatesText: "Documentos en PDF relacionados con formacion complementaria, participaciones y experiencia profesional.",
+    certificateViewerTag: "Vista previa",
+    certificateViewerTitle: "Selecciona un certificado",
+    certificatePreview: "Vista previa",
+    certificateLoading: "Cargando certificados...",
+    certificateEmpty: "No se encontraron certificados PDF.",
+    certificateError: "No fue posible cargar los certificados.",
+    certificateOpen: "Abrir PDF",
     contactTag: "Contacto",
     contactTitle: "Disponible para nuevos retos",
     contactText: "Si buscas un perfil que combine desarrollo, bases de datos, soporte e infraestructura, conversemos.",
@@ -78,8 +103,10 @@ const translations = {
     navHome: "Home",
     navAbout: "Profile",
     navExperience: "Experience",
+    navEducation: "Studies",
     navSkills: "Skills",
     navProjects: "Projects",
+    navCertificates: "Certificates",
     navContact: "Contact",
     eyebrow: "Systems Engineer | Full Stack | Support and Infrastructure",
     heroGreeting: "Hi, I'm",
@@ -119,6 +146,15 @@ const translations = {
     job1Item2: "Real-time technical support for users of critical systems.",
     job1Item3: "Database administration and backups, continuous monitoring, and technical reporting.",
     job1Item4: "Participation in development, testing, maintenance, and training for technology systems.",
+    educationTag: "Education",
+    educationTitle: "Studies",
+    educationText: "Academic background focused on systems, analysis, software development, and adaptation to real technology environments.",
+    education1Title: "Systems Engineer",
+    education1School: "Technical University of Machala",
+    education1Location: "Machala, El Oro",
+    education2Title: "Bachelor of Science",
+    education2School: "Santisimos Corazones Private School",
+    education2Location: "Pasaje, El Oro",
     skillsTag: "Capabilities",
     skillsTitle: "Technical stack and key skills",
     skillGroup1: "Development",
@@ -132,17 +168,31 @@ const translations = {
     soft6: "Creativity",
     projectsTag: "Portfolio",
     projectsTitle: "Featured projects and experience",
-    projectsText: "A blend of web development, mobile apps, servers, and applied simulation.",
+    projectsText: "Projects focused on enterprise systems, operational support, monitoring, inventory, web applications, and solutions deployed in real environments.",
+    project0Title: "Integrated support and operations manager",
+    project0Text: "Internal system for incident and ticket management, payment bell monitoring, inventory control, solution logging, operational tracking, and institutional system deployments.",
     project1Title: "Online Store",
-    project1Text: "Development of an online store using Drupal Commerce and PHP focused on shopping experience and catalog management.",
+    project1Text: "Ecommerce platform focused on catalog management, shopping experience, and commercial administration with emphasis on usability and content management.",
     project2Title: "Services on CentOS",
-    project2Text: "Configuration of web, proxy, database, Samba, DHCP, DNS, mail, firewall, and routing services in a virtualized environment.",
+    project2Text: "Implementation and administration of network, security, database, and connectivity services for infrastructure lab and testing environments.",
     project3Text: "Mobile recipe app based on fish species available in Machala, with visual support and detailed instructions.",
     project4Text: "Mobile app to identify fish, review characteristics, and access nutritional information.",
     project5Title: "Factory optimization",
     project5Text: "Simulation of a jam production process in FlexSim to detect opportunities for operational improvement.",
+    project6Title: "Monitoring and technical support platform",
+    project6Text: "Module for tracking requests, incidents, quick access to operational monitors, service logs, and status control for internal support.",
     visitProject: "Visit project",
     viewStore: "View in store",
+    certificatesTag: "Professional backing",
+    certificatesTitle: "Certificates",
+    certificatesText: "PDF documents related to complementary training, participations, and professional experience.",
+    certificateViewerTag: "Preview",
+    certificateViewerTitle: "Select a certificate",
+    certificatePreview: "Preview",
+    certificateLoading: "Loading certificates...",
+    certificateEmpty: "No PDF certificates were found.",
+    certificateError: "Certificates could not be loaded.",
+    certificateOpen: "Open PDF",
     contactTag: "Contact",
     contactTitle: "Available for new challenges",
     contactText: "If you need a profile combining development, databases, support, and infrastructure, let's talk.",
@@ -184,6 +234,13 @@ const navLinks = document.querySelectorAll(".nav-link");
 const revealItems = document.querySelectorAll(".reveal");
 const counterItems = document.querySelectorAll(".stat-number");
 const langButtons = document.querySelectorAll("[data-lang-trigger]");
+const certificatesSection = document.getElementById("certificates");
+const certificatesGrid = document.getElementById("certificates-grid");
+const certificatesStatus = document.getElementById("certificates-status");
+const certificateFrame = document.getElementById("certificate-frame");
+const certificateViewerLink = document.getElementById("certificate-viewer-link");
+const certificateViewerTitle = document.getElementById("certificate-viewer-title");
+let certificateCards = [];
 
 function applyTheme() {
   body.classList.toggle("light-theme", state.theme === "light");
@@ -208,7 +265,196 @@ function applyTranslations() {
   });
 
   startRotator(true);
+  updateCertificateTexts();
+  syncCertificateViewerTitle();
   localStorage.setItem("lang", state.lang);
+}
+
+function updateCertificateTexts() {
+  certificateCards.forEach((card) => {
+    const previewLabel = card.querySelector("p");
+    if (previewLabel) {
+      previewLabel.textContent = translations[state.lang].certificatePreview;
+    }
+  });
+
+  const emptyState = certificatesGrid?.querySelector(".certificate-empty");
+  if (!emptyState) {
+    return;
+  }
+
+  const status = certificatesGrid.dataset.status || "loading";
+  const keyByStatus = {
+    loading: "certificateLoading",
+    empty: "certificateEmpty",
+    error: "certificateError"
+  };
+
+  emptyState.textContent = translations[state.lang][keyByStatus[status]];
+}
+
+function syncCertificateViewerTitle() {
+  const activeCard = document.querySelector(".certificate-card.is-active");
+  if (!activeCard || !certificateViewerTitle) {
+    if (certificateViewerTitle) {
+      certificateViewerTitle.textContent = translations[state.lang].certificateViewerTitle;
+    }
+    return;
+  }
+
+  certificateViewerTitle.textContent = activeCard.dataset.title || translations[state.lang].certificateViewerTitle;
+}
+
+function setCertificatePreview(card) {
+  const pdf = card.dataset.pdf;
+  const encodedPdf = encodeURI(pdf);
+
+  certificateCards.forEach((item) => item.classList.remove("is-active"));
+  card.classList.add("is-active");
+
+  if (certificateFrame) {
+    certificateFrame.src = encodedPdf;
+  }
+
+  if (certificateViewerLink) {
+    certificateViewerLink.href = pdf;
+  }
+
+  syncCertificateViewerTitle();
+}
+
+function getGithubRepoConfig() {
+  if (!certificatesSection) {
+    return null;
+  }
+
+  const owner = certificatesSection.dataset.githubOwner;
+  const repo = certificatesSection.dataset.githubRepo;
+  const branch = certificatesSection.dataset.githubBranch || "main";
+
+  if (owner && repo) {
+    return { owner, repo, branch };
+  }
+
+  const hostname = window.location.hostname;
+  const segments = window.location.pathname.split("/").filter(Boolean);
+
+  if (!hostname.endsWith("github.io")) {
+    return null;
+  }
+
+  return {
+    owner: hostname.split(".")[0],
+    repo: segments[0] || `${hostname.split(".")[0]}.github.io`,
+    branch
+  };
+}
+
+function getBasePath() {
+  const hostname = window.location.hostname;
+  const segments = window.location.pathname.split("/").filter(Boolean);
+
+  if (hostname.endsWith("github.io") && segments.length > 0 && !window.location.pathname.endsWith("/")) {
+    return `/${segments[0]}`;
+  }
+
+  if (hostname.endsWith("github.io") && segments.length > 0) {
+    return `/${segments[0]}`;
+  }
+
+  return "";
+}
+
+function formatCertificateName(fileName) {
+  return decodeURIComponent(fileName)
+    .replace(/\.pdf$/i, "")
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function createCertificateCard(file) {
+  const button = document.createElement("button");
+  const title = formatCertificateName(file.name);
+
+  button.type = "button";
+  button.className = "certificate-card reveal";
+  button.dataset.pdf = file.url;
+  button.dataset.title = title;
+  button.innerHTML = `
+    <div class="certificate-icon"><i class="fa-regular fa-file-pdf"></i></div>
+    <div>
+      <h3>${title}</h3>
+      <p>${translations[state.lang].certificatePreview}</p>
+    </div>
+  `;
+
+  button.addEventListener("click", () => {
+    setCertificatePreview(button);
+  });
+
+  return button;
+}
+
+function renderCertificates(files) {
+  if (!certificatesGrid) {
+    return;
+  }
+
+  certificatesGrid.innerHTML = "";
+
+  if (!files.length) {
+    certificatesGrid.dataset.status = "empty";
+    certificatesGrid.innerHTML = `<div class="certificate-empty">${translations[state.lang].certificateEmpty}</div>`;
+    syncCertificateViewerTitle();
+    return;
+  }
+
+  certificatesGrid.dataset.status = "ready";
+  certificateCards = files.map((file) => createCertificateCard(file));
+  certificateCards.forEach((card) => {
+    certificatesGrid.appendChild(card);
+    revealObserver.observe(card);
+  });
+
+  setCertificatePreview(certificateCards[0]);
+}
+
+async function loadCertificates() {
+  const repoConfig = getGithubRepoConfig();
+  const basePath = getBasePath();
+
+  if (!repoConfig || !certificatesGrid) {
+    if (certificatesGrid) {
+      certificatesGrid.dataset.status = "error";
+      certificatesGrid.innerHTML = `<div class="certificate-empty">${translations[state.lang].certificateError}</div>`;
+    }
+    return;
+  }
+
+  try {
+    certificatesGrid.dataset.status = "loading";
+    const response = await fetch(`https://api.github.com/repos/${repoConfig.owner}/${repoConfig.repo}/contents/img/certificados?ref=${repoConfig.branch}`);
+    if (!response.ok) {
+      throw new Error(`GitHub API ${response.status}`);
+    }
+
+    const entries = await response.json();
+    const files = entries
+      .filter((entry) => entry.type === "file" && /\.pdf$/i.test(entry.name))
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: "base" }))
+      .map((entry) => ({
+        name: entry.name,
+        url: `${basePath}/${entry.path}`
+      }));
+
+    renderCertificates(files);
+  } catch (error) {
+    if (certificatesGrid) {
+      certificatesGrid.dataset.status = "error";
+      certificatesGrid.innerHTML = `<div class="certificate-empty">${translations[state.lang].certificateError}</div>`;
+    }
+  }
 }
 
 function startRotator(reset = false) {
@@ -312,4 +558,5 @@ counterItems.forEach((item) => counterObserver.observe(item));
 
 applyTheme();
 applyTranslations();
+loadCertificates();
 setActiveLink();
