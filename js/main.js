@@ -4,7 +4,7 @@ const translations = {
     navAbout: "Perfil",
     navExperience: "Experiencia",
     navEducation: "Estudios",
-    navSkills: "Skills",
+    navSkills: "Capacidades",
     navProjects: "Proyectos",
     navCertificates: "Certificados",
     navContact: "Contacto",
@@ -97,7 +97,7 @@ const translations = {
     contactTitle: "Disponible para nuevos retos",
     contactText: "Si buscas un perfil que combine desarrollo, bases de datos, soporte e infraestructura, conversemos.",
     footerRole: "Ingeniero de Sistemas",
-    footerCopy: "Portafolio profesional listo para GitHub Pages."
+    footerCopy: "Portafolio profesional."
   },
   en: {
     navHome: "Home",
@@ -197,7 +197,7 @@ const translations = {
     contactTitle: "Available for new challenges",
     contactText: "If you need a profile combining development, databases, support, and infrastructure, let's talk.",
     footerRole: "Systems Engineer",
-    footerCopy: "Professional portfolio ready for GitHub Pages."
+    footerCopy: "Professional portfolio."
   }
 };
 
